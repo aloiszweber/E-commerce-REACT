@@ -1,0 +1,84 @@
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background: radial-gradient(#fff, #eaf2fb);
+    padding-left: 7.5vw;
+    padding-right: 7.5vw;
+}
+
+.logo {
+    height: 44px;
+    cursor: pointer;
+}
+
+.logo figure img {
+    width: 70px;
+}
+
+
+.box_search {
+    align-self: center;
+    justify-self: flex-end;
+}
+
+.navbar .navbar2 {
+    display: flex;
+    gap: 2vw;
+}
+
+nav {
+    flex: 1;
+    text-align: right;
+}
+
+nav ul {
+    display: inline-block;
+    list-style-type: none;
+}
+
+nav ul li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #555;
+}
+
+#basket {
+    cursor: pointer;
+}
+
+.navigation {
+    position: relative;
+    background-color: #1a1a1a;
+    color: white;
+    height: 500px;
+    width: 20vw;
+    transform: translate(1vw, 510px);
+    opacity: 0.8;
+    margin-top: -500px;
+    margin-left: 1vw;
+    text-align: center;
+    z-index: 2;
+
+    ul {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+        list-style-type: none;
+        height: 500px;
+    }
+
+    ul a {
+        color: white;
+        text-decoration: none;
+
+    }
+
+}

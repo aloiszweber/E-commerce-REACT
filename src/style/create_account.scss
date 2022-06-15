@@ -1,0 +1,41 @@
+#inscription_form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    padding-top: 15px;
+    padding-bottom: 140px;
+
+    button {
+        margin-top: 12px;
+        border-radius: 10px;
+        background-color: #00d0e5;
+        color: white;
+        border: none;
+        padding: 6px;
+        cursor: pointer;
+        margin-left: 4vw;
+    }
+
+    .inputs {
+        margin-bottom: 12px;
+    }
+
+    .gender {
+        margin-top: 12px;
+        margin-bottom: 12px;
+    }
+
+    .gender label {
+        margin-left: 2vw;
+    }
+
+    #mail_input {
+        margin-left: 40px;
+    }
+
+    label {
+        font-size: small;
+    }
+}
