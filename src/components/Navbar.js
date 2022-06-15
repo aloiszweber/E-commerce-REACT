@@ -1,4 +1,4 @@
-import React /*,{ useState } */ from 'react';
+import React from 'react';
 import basket from '../assets/cart.png';
 import ooo from '../assets/ooo.png';
 

@@ -1,25 +1,28 @@
 import React from 'react';
-// import FeaturedProducts from '../components/FeaturedProducts';
+import AllProducts from '../components/AllProducts';
 import Footer from '../components/Footer';
 import Navigation from '../components/Navigation';
-import { Stocks } from '../Stocks';
 import { stockData } from "../data";
-import FeaturedProducts from '../components/FeaturedProducts';
 
 
 const Products = ({ showLinks, setShowLinks, styles }) => {
     return (
         <div>
             <Navigation showLinks={showLinks} setShowLinks={setShowLinks} styles={styles} />
-            {/* <FeaturedProducts /> */}
-
-            {stockData.map((data) => {
-                return (
-                    <>
-                        <FeaturedProducts data={data} />
-                    </>
-                );
-            })}
+            <section className="featured-products">
+                <div className="container">
+                    <h2> All our products </h2>
+                    <div className="row">
+                        {stockData.map((data) => {
+                            return (
+                                <>
+                                    <AllProducts data={data} />
+                                </>
+                            );
+                        })}
+                    </div>
+                </div>
+            </section>
             <Footer />
         </div>
     );
