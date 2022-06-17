@@ -4,7 +4,7 @@ import unnamed from '../assets/unnamed.jpg';
 function Header() {
     return (
         <section className="header-section">
-            <div className="container">
+            <div style={{ paddingTop: '23px' }} className="container">
                 <div className="row">
                     <div className="col-2">
                         <h1> Give at your training <br /> a new style ! </h1>

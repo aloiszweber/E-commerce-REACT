@@ -24,7 +24,6 @@ body {
 }
 
 .header-section {
-    margin-top: -20px;
     background: radial-gradient(#fff, #eaf2fb);
 }
 
@@ -104,6 +103,45 @@ p {
     }
 }
 
+.popup {
+    height: 572px;
+    width: 700px;
+    background-color: #1a1a1a;
+    z-index: 2000;
+    text-align: justify;
+    padding-left: 20px;
+    padding-right: 40px;
+    padding-top: 0px;
+    transform: translate(24.5vw, 654px);
+    margin-top: -723px;
+    opacity: 0.95;
+    position: fixed;
+    margin-left: -140px;
+
+    h3 {
+        color: white;
+        padding-bottom: 25px;
+        padding-top: 12px;
+    }
+
+    .contentPopup p {
+        color: white;
+        font-size: 14px;
+    }
+
+    button {
+        width: 650px;
+        height: 40px;
+        margin-top: 7px;
+        border-radius: 5px;
+        border: none;
+        margin-left: 3px;
+        font-size: medium;
+        cursor: pointer;
+    }
+
+}
+
 .rating .fa {
     color: #16a7b4;
 }
@@ -115,4 +153,92 @@ p {
     padding: 30px 0px;
     max-width: 300px;
     margin-left: 5vw;
+}
+
+
+/* End of index and about style */
+
+@media screen and (max-width: 780px) {
+
+    #header-section {
+        background: radial-gradient(#fff, #eaf2fb);
+    }
+
+    .popup {
+        height: 580px;
+        width: 100vw;
+        background-color: #1a1a1a;
+        z-index: 2000;
+        transform: translate(5%, -71px);
+        text-align: justify;
+        margin-top: 0px;
+        margin-left: -3vw;
+        padding-left: 30px;
+
+        h3 {
+            color: white;
+            padding-bottom: 3vw;
+            padding-top: 3vw;
+        }
+
+        .contentPopup p {
+            color: white;
+            font-size: 14px;
+        }
+
+        button {
+            width: 87vw;
+            height: 40px;
+            margin-top: 2vw;
+            border-radius: 5px;
+            border: none;
+            font-size: medium;
+            cursor: pointer;
+        }
+    }
+
+}
+
+@media screen and (min-width: 520px) and (max-width: 600px) {
+    .popup {
+        height: 590px;
+        transform: translate(33px, -71px);
+        padding-left: 25px;
+
+        button {
+            width: 85vw;
+        }
+    }
+}
+
+@media screen and (min-width: 450px) and (max-width: 520px) {
+    .popup {
+        transform: translate(25px, -71px);
+        padding-left: 25px;
+        height: 550px;
+
+        .contentPopup p {
+            font-size: 11px;
+        }
+
+        button {
+            width: 85vw;
+        }
+    }
+}
+
+@media screen and (min-width: 310px) and (max-width: 450px) {
+    .popup {
+        transform: translate(25px, -75px);
+        padding-left: 25px;
+        height: 595px;
+
+        .contentPopup p {
+            font-size: 10px;
+        }
+
+        button {
+            width: 75vw;
+        }
+    }
 }
